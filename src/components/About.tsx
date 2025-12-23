@@ -31,10 +31,20 @@ const About = () => {
               About Me
             </h2>
             <div className="w-20 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mb-8 rounded-full" />
-            <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              I am an AI-ML enthusiast specializing in transforming raw datasets into actionable insights using SQL, Python, and ML models. 
-              Skilled in dashboards, automation, and building end-to-end model workflows.
-            </p>
+            <div className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed space-y-4">
+              <p>
+                I am a Business Data Analyst with hands-on experience in analyzing real-world datasets using SQL, Python, Excel, and Power BI.
+              </p>
+              <p>
+                I focus on transforming raw data into clear insights through reporting, dashboards, and exploratory analysis to support business and operational decision-making.
+              </p>
+              <p>
+                My work includes analyzing large datasets, identifying patterns and risks, and presenting insights in a way that is easy for stakeholders to understand.
+              </p>
+              <p>
+                I am seeking entry-level Data Analyst, Reporting Analyst, or BI Analyst roles where I can contribute to data-driven decision-making and continue to grow as an analyst.
+              </p>
+            </div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">

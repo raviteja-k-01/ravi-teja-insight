@@ -1,42 +1,31 @@
-import { ExternalLink, Github } from "lucide-react";
+import { ExternalLink, Github, BarChart2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Projects = () => {
   const projects = [
     {
-      title: "Customer Churn Prediction using Machine Learning",
-      description: "Built an ML model to predict customer churn using classification techniques.",
-      process: [
-        "Data cleaning and preprocessing of customer behavioral data",
-        "Feature engineering to identify key churn indicators",
-        "Model training using Random Forest and XGBoost",
-        "Achieved 85% accuracy and 0.88 ROC AUC Score",
-        "Created visual dashboards for business insights",
-      ],
-      output: "Identified key churn drivers & improved retention strategy with actionable insights.",
-      technologies: ["Python", "Pandas", "Scikit-Learn", "XGBoost", "Seaborn", "Matplotlib"],
+      title: "Uber Ride Cancellations & Wasted Capacity Analysis",
+      description: "Business-focused analysis of ride cancellations and operational inefficiencies using large-scale data.",
+      dataset: "150,000+ ride records (NCR region)",
+      keyOutcome: "~38% cancellation rate; ~INR 19.9M estimated revenue impact",
+      tools: ["SQL", "Python (pandas)", "Power BI"],
       gradient: "from-primary/20 to-secondary/20",
       links: {
+        project: "#uber-project",
+        powerbi: "#",
         github: "https://github.com/raviteja-k-01",
-        caseStudy: "#",
       },
     },
     {
-      title: "Uber Ride Cancellations and Wasted Capacity Analysis",
-      description: "Comprehensive analysis of ride cancellations to optimize operational efficiency.",
-      process: [
-        "Cleaned 150K+ trip records into 37K analysis-ready dataset",
-        "Identified 18% driver cancellations across operations",
-        "Discovered 12 high-risk zones with ~60% cancellation rate",
-        "Peak cancellations during 6-8 PM time window",
-        "Built Power BI dashboard for real-time monitoring",
-      ],
-      output: "Estimated ~$185K/month loss; proposed strategies projected to increase completion rate from 62% to ~75%.",
-      technologies: ["SQL", "Python", "Pandas", "Excel", "Power BI"],
+      title: "Customer Churn Analysis",
+      description: "Customer churn analysis to identify high-risk segments and key churn drivers.",
+      dataset: "7,043 customer records (21 features)",
+      keyOutcome: "~55–60% customers identified as high-risk",
+      tools: ["Python (pandas)", "Matplotlib", "Seaborn"],
       gradient: "from-secondary/20 to-primary/20",
       links: {
+        project: "#churn-project",
         github: "https://github.com/raviteja-k-01",
-        caseStudy: "#",
       },
     },
   ];
@@ -51,75 +40,91 @@ const Projects = () => {
             </h2>
             <div className="w-20 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mb-8 rounded-full" />
             <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto">
-              Real-world solutions leveraging data science and machine learning
+              Real-world business analytics projects delivering actionable insights
             </p>
           </div>
 
-          <div className="space-y-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {projects.map((project, index) => (
               <div
                 key={project.title}
-                className="glass-card p-6 sm:p-8 hover:shadow-2xl transition-all duration-300 animate-slide-up group"
+                className="glass-card p-6 sm:p-8 hover:shadow-2xl transition-all duration-300 animate-slide-up group hover:scale-[1.02]"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <div className={`absolute inset-0 bg-gradient-to-br ${project.gradient} opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg`} />
                 
                 <div className="relative z-10">
-                  <h3 className="text-xl sm:text-2xl font-bold mb-4 text-foreground group-hover:text-primary transition-colors">
-                    {project.title}
-                  </h3>
+                  <div className="flex items-start gap-4 mb-4">
+                    <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-primary to-secondary flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
+                      <BarChart2 className="h-6 w-6 text-white" />
+                    </div>
+                    <h3 className="text-lg sm:text-xl font-bold text-foreground group-hover:text-primary transition-colors">
+                      {project.title}
+                    </h3>
+                  </div>
                   
-                  <p className="text-base sm:text-lg text-muted-foreground mb-4">
+                  <p className="text-sm sm:text-base text-muted-foreground mb-6">
                     {project.description}
                   </p>
 
-                  <div className="mb-4">
-                    <h4 className="font-semibold text-foreground mb-2">Process & Methodology:</h4>
-                    <ul className="space-y-2">
-                      {project.process.map((step, i) => (
-                        <li key={i} className="flex items-start gap-2 text-sm sm:text-base text-muted-foreground">
-                          <span className="text-primary mt-1">▪</span>
-                          <span>{step}</span>
-                        </li>
-                      ))}
-                    </ul>
+                  <div className="space-y-3 mb-6">
+                    <div className="flex items-start gap-2">
+                      <span className="text-sm font-semibold text-foreground min-w-[80px]">Dataset:</span>
+                      <span className="text-sm text-muted-foreground">{project.dataset}</span>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <span className="text-sm font-semibold text-foreground min-w-[80px]">Outcome:</span>
+                      <span className="text-sm text-muted-foreground">{project.keyOutcome}</span>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <span className="text-sm font-semibold text-foreground min-w-[80px]">Tools:</span>
+                      <div className="flex flex-wrap gap-2">
+                        {project.tools.map((tool) => (
+                          <span
+                            key={tool}
+                            className="px-2 py-1 text-xs bg-primary/10 text-primary rounded-full border border-primary/20"
+                          >
+                            {tool}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
                   </div>
 
-                  <div className="mb-6">
-                    <h4 className="font-semibold text-foreground mb-2">Output:</h4>
-                    <p className="text-sm sm:text-base text-muted-foreground">{project.output}</p>
-                  </div>
-
-                  <div className="flex flex-wrap gap-2 mb-6">
-                    {project.technologies.map((tech) => (
-                      <span
-                        key={tech}
-                        className="px-3 py-1 text-xs sm:text-sm bg-primary/10 text-primary rounded-full border border-primary/20"
-                      >
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
-
-                  <div className="flex flex-col sm:flex-row gap-3">
+                  <div className="flex flex-wrap gap-3">
                     <Button
                       variant="outline"
+                      size="sm"
                       className="border-primary text-primary hover:bg-primary hover:text-white transition-colors"
                       asChild
                     >
-                      <a href={project.links.caseStudy}>
+                      <a href={project.links.project}>
                         <ExternalLink className="mr-2 h-4 w-4" />
-                        Case Study
+                        View Project
                       </a>
                     </Button>
+                    {project.links.powerbi && (
+                      <Button
+                        variant="outline"
+                        size="sm"
+                        className="border-secondary text-secondary hover:bg-secondary hover:text-white transition-colors"
+                        asChild
+                      >
+                        <a href={project.links.powerbi} target="_blank" rel="noopener noreferrer">
+                          <BarChart2 className="mr-2 h-4 w-4" />
+                          Power BI
+                        </a>
+                      </Button>
+                    )}
                     <Button
                       variant="outline"
-                      className="border-secondary text-secondary hover:bg-secondary hover:text-white transition-colors"
+                      size="sm"
+                      className="border-muted-foreground/50 text-muted-foreground hover:bg-muted-foreground hover:text-white transition-colors"
                       asChild
                     >
                       <a href={project.links.github} target="_blank" rel="noopener noreferrer">
                         <Github className="mr-2 h-4 w-4" />
-                        GitHub Repo
+                        GitHub
                       </a>
                     </Button>
                   </div>
