@@ -34,10 +34,10 @@ const Hero = () => {
               Ravi Teja Kesagani
             </h1>
             <h2 className="text-xl sm:text-2xl md:text-3xl text-foreground/80 mb-6 font-medium">
-              Artificial Intelligence and Data Science
+              Business Data Analyst
             </h2>
             <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-12 max-w-2xl mx-auto leading-relaxed">
-              Turning data into actionable insights and building models to predict the future
+              I analyze business data using SQL, Python, Excel, and Power BI to uncover patterns, risks, and revenue-impacting insights through reporting and dashboards.
             </p>
 
             {/* CTA Buttons */}
