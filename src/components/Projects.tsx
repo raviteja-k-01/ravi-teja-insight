@@ -1,8 +1,18 @@
-import { ExternalLink, Github, BarChart2 } from "lucide-react";
+import { ExternalLink, Github, BarChart2, Car, UserMinus, ShoppingCart } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { LucideIcon } from "lucide-react";
 
 const Projects = () => {
-  const projects = [
+  const projects: {
+    title: string;
+    description: string;
+    dataset: string;
+    keyOutcome: string;
+    tools: string[];
+    gradient: string;
+    icon: LucideIcon;
+    links: { project: string; powerbi?: string; github: string };
+  }[] = [
     {
       title: "Uber Ride Cancellations & Wasted Capacity Analysis",
       description: "Business-focused analysis of ride cancellations and operational inefficiencies using large-scale data.",
@@ -10,6 +20,7 @@ const Projects = () => {
       keyOutcome: "~38% cancellation rate; ~INR 19.9M estimated revenue impact",
       tools: ["SQL", "Python (pandas)", "Power BI"],
       gradient: "from-primary/20 to-secondary/20",
+      icon: Car,
       links: {
         project: "https://drive.google.com/file/d/14FZn1iow0VnutJfEX-TrLvFkcxymq2cK/view?usp=sharing",
         powerbi: "https://drive.google.com/file/d/14FZn1iow0VnutJfEX-TrLvFkcxymq2cK/view?usp=sharing",
@@ -23,6 +34,7 @@ const Projects = () => {
       keyOutcome: "~55–60% customers identified as high-risk",
       tools: ["Python (pandas)", "Matplotlib", "Seaborn"],
       gradient: "from-secondary/20 to-primary/20",
+      icon: UserMinus,
       links: {
         project: "#churn-project",
         github: "https://github.com/raviteja-k-01",
@@ -35,6 +47,7 @@ const Projects = () => {
       keyOutcome: "5 distinct customer segments; 4-page Power BI dashboard",
       tools: ["Python (Pandas, NumPy)", "MySQL", "Power BI"],
       gradient: "from-primary/20 to-secondary/20",
+      icon: ShoppingCart,
       links: {
         project: "https://github.com/raviteja-k-01/Retail-Sales-Insights-Customer-Segmentation",
         github: "https://github.com/raviteja-k-01/Retail-Sales-Insights-Customer-Segmentation",
@@ -68,7 +81,7 @@ const Projects = () => {
                 <div className="relative z-10">
                   <div className="flex items-start gap-4 mb-4">
                     <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-primary to-secondary flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
-                      <BarChart2 className="h-6 w-6 text-white" />
+                      <project.icon className="h-6 w-6 text-white" />
                     </div>
                     <h3 className="text-lg sm:text-xl font-bold text-foreground group-hover:text-primary transition-colors">
                       {project.title}
