@@ -28,6 +28,18 @@ const Projects = () => {
         github: "https://github.com/raviteja-k-01",
       },
     },
+    {
+      title: "Retail Sales Insights & Customer Segmentation",
+      description: "End-to-end sales analysis with RFM customer segmentation for targeted marketing insights.",
+      dataset: "Online retail transactional records (cleaned & processed)",
+      keyOutcome: "5 distinct customer segments; 4-page Power BI dashboard",
+      tools: ["Python (Pandas, NumPy)", "MySQL", "Power BI"],
+      gradient: "from-primary/20 to-secondary/20",
+      links: {
+        project: "https://github.com/raviteja-k-01/Retail-Sales-Insights-Customer-Segmentation",
+        github: "https://github.com/raviteja-k-01/Retail-Sales-Insights-Customer-Segmentation",
+      },
+    },
   ];
 
   return (
