@@ -168,6 +168,12 @@ All colors MUST be HSL.
     @apply bg-card/40 backdrop-blur-lg border border-border/50 rounded-lg;
   }
 
+  /* Fix for descenders (g, j, y, p, q) being cut off in gradient text */
+  .bg-clip-text {
+    padding-bottom: 0.15em;
+    line-height: 1.2;
+  }
+
   .animate-fade-in {
     animation: fadeIn 0.6s ease-out forwards;
   }

@@ -3,6 +3,18 @@ import { Briefcase, Building2 } from "lucide-react";
 const Experience = () => {
   const experiences = [
     {
+      title: "Data Analytics Trainee",
+      company: "Codegnan IT Solutions",
+      location: "Hyderabad",
+      period: "Jul 2025 – Present",
+      description: [
+        "Reviewed and processed 10,000+ records through SQL and Python workflows to derive metrics, uncover trends, and resolve data inconsistencies",
+        "Wrote MySQL queries (joins, aggregations, filters) and performed data cleaning, validation, and transformation",
+        "Created analytical summaries and visuals to highlight churn drivers and performance gaps",
+      ],
+      gradient: "from-primary/20 to-primary/5",
+    },
+    {
       title: "AI Intern",
       company: "SmartKnower",
       location: "Remote",
