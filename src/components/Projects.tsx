@@ -11,8 +11,8 @@ const Projects = () => {
       tools: ["SQL", "Python (pandas)", "Power BI"],
       gradient: "from-primary/20 to-secondary/20",
       links: {
-        project: "#uber-project",
-        powerbi: "/resume.pdf",
+        project: "https://drive.google.com/file/d/14FZn1iow0VnutJfEX-TrLvFkcxymq2cK/view?usp=sharing",
+        powerbi: "https://drive.google.com/file/d/14FZn1iow0VnutJfEX-TrLvFkcxymq2cK/view?usp=sharing",
         github: "https://github.com/raviteja-k-01",
       },
     },

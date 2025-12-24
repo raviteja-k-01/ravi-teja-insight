@@ -47,7 +47,7 @@ const Hero = () => {
                 className="w-full sm:w-auto bg-gradient-to-r from-primary to-secondary hover:shadow-lg hover:shadow-primary/50 transition-all duration-300 hover:scale-105"
                 asChild
               >
-                <a href="/resume.pdf" download>
+                <a href="/Data_Analyst_Ravi_Teja_1.pdf" download>
                   <Download className="mr-2 h-5 w-5" />
                   Download Resume
                 </a>
