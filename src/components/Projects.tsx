@@ -15,9 +15,9 @@ const Projects = () => {
   }[] = [
     {
       title: "Uber Ride Cancellations & Wasted Capacity Analysis",
-      description: "Business-focused analysis of ride cancellations and operational inefficiencies using large-scale data.",
+      description: "Analyzed large-scale ride data to identify cancellation drivers, peak-hour inefficiencies, and revenue-impacting demand–supply gaps for operational decision-making.",
       dataset: "150,000+ ride records (NCR region)",
-      keyOutcome: "~38% cancellation rate; ~INR 19.9M estimated revenue impact",
+      keyOutcome: "38% cancellation rate identified; ₹19.9M estimated revenue impact from wasted capacity",
       tools: ["SQL", "Python (pandas)", "Power BI"],
       gradient: "from-primary/20 to-secondary/20",
       icon: Car,
@@ -29,9 +29,9 @@ const Projects = () => {
     },
     {
       title: "Customer Churn Analysis",
-      description: "Customer churn analysis to identify high-risk segments and key churn drivers.",
+      description: "Analyzed customer behavior and contract data to identify churn drivers and segment customers by churn risk for retention-focused decision-making.",
       dataset: "7,043 customer records (21 features)",
-      keyOutcome: "~55–60% customers identified as high-risk",
+      keyOutcome: "55–60% customers identified as high-risk; key churn drivers isolated for retention strategy",
       tools: ["Python (pandas)", "Matplotlib", "Seaborn"],
       gradient: "from-secondary/20 to-primary/20",
       icon: UserMinus,
@@ -42,9 +42,9 @@ const Projects = () => {
     },
     {
       title: "Retail Sales Insights & Customer Segmentation",
-      description: "End-to-end sales analysis with RFM customer segmentation for targeted marketing insights.",
+      description: "Performed end-to-end retail sales analysis using RFM segmentation to uncover customer value patterns and support targeted marketing decisions.",
       dataset: "Online retail transactional records (cleaned & processed)",
-      keyOutcome: "5 distinct customer segments; 4-page Power BI dashboard",
+      keyOutcome: "5 customer segments identified and depicted with an interactive Power BI dashboard",
       tools: ["Python (Pandas, NumPy)", "MySQL", "Power BI"],
       gradient: "from-primary/20 to-secondary/20",
       icon: ShoppingCart,
