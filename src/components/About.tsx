@@ -33,16 +33,13 @@ const About = () => {
             <div className="w-20 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mb-8 rounded-full" />
             <div className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed space-y-4">
               <p>
-                I am a Business Data Analyst with hands-on experience in analyzing real-world datasets using SQL, Python, Excel, and Power BI.
+                I am a Data Analyst with hands-on experience using SQL, Python, Excel, and Power BI to analyze real-world business datasets.
               </p>
               <p>
-                I focus on transforming raw data into clear insights through reporting, dashboards, and exploratory analysis to support business and operational decision-making.
+                I specialize in transforming raw data into actionable insights through exploratory analysis, KPI reporting, and interactive dashboards that support operational and business decisions.
               </p>
-              <p>
-                My work includes analyzing large datasets, identifying patterns and risks, and presenting insights in a way that is easy for stakeholders to understand.
-              </p>
-              <p>
-                I am seeking entry-level Data Analyst, Reporting Analyst, or BI Analyst roles where I can contribute to data-driven decision-making and continue to grow as an analyst.
+              <p className="font-medium">
+                Currently seeking entry-level Data Analyst, Reporting Analyst, or BI Analyst roles where I can contribute analytical value from day one.
               </p>
             </div>
           </div>
