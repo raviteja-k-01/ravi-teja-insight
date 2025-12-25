@@ -1,73 +1,39 @@
-# Welcome to your Lovable project
+# Ravi Teja – Data Analyst Portfolio
 
-## Project info
+This repository contains the source code for my personal portfolio website, showcasing my data analytics projects, technical skills, and professional experience.
 
-**URL**: https://lovable.dev/projects/175cfc0f-68a7-4086-98df-42bba9dbba4c
+## Live Portfolio
+🔗 https://portfolioraviteja.netlify.app/
 
-## How can I edit this code?
+## About Me
+I am a Data Analyst with hands-on experience in analyzing real-world business datasets using SQL, Python, Excel, and Power BI.  
+My work focuses on transforming raw data into actionable insights through exploratory analysis, KPI reporting, and interactive dashboards.
 
-There are several ways of editing your application.
+## Featured Projects
+The portfolio highlights analytics projects including:
+- **Uber Ride Cancellations & Wasted Capacity Analysis**
+- **Customer Churn Analysis**
+- **Retail Sales Insights & Customer Segmentation**
 
-**Use Lovable**
+Each project demonstrates:
+- Business problem framing
+- Data cleaning and exploratory analysis
+- Insight generation and decision support
+- Clear communication through reports and dashboards
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/175cfc0f-68a7-4086-98df-42bba9dbba4c) and start prompting.
+## Skills & Tools
+- SQL, Python (pandas), Excel
+- Power BI (Dashboards, Data Modeling)
+- Data Cleaning, EDA, KPI Analysis
+- Customer & Operational Analytics
 
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
+## Tech Stack
+This portfolio is built using:
+- React + TypeScript
 - Vite
-- TypeScript
-- React
-- shadcn-ui
 - Tailwind CSS
+- shadcn-ui
 
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/175cfc0f-68a7-4086-98df-42bba9dbba4c) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+## Contact
+- GitHub: https://github.com/raviteja-k-01
+- LinkedIn: https://www.linkedin.com/in/raviteja5/
