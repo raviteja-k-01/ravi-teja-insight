@@ -160,8 +160,8 @@ const Contact = () => {
                   Open to Opportunities
                 </h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  I'm actively seeking opportunities in AI/ML and Data Science. 
-                  Whether it's an internship, full-time role, or exciting project collaboration, 
+                  I am actively seeking entry-level Data Analyst, Reporting Analyst, or BI Analyst roles and AI-ML roles. 
+                  Whether it's an internship, full-time role, or exciting project collaboration,
                   I'd love to hear from you!
                 </p>
               </div>
