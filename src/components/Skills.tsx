@@ -6,9 +6,10 @@ const Skills = () => {
       icon: BarChart3,
       category: "Data Analysis & Reporting",
       skills: [
-        "Writing SQL queries to extract, aggregate, and analyze data",
-        "Analyzing datasets to identify trends, risks, and performance gaps",
-        "Building business-focused reports and dashboards",
+        "Writing SQL queries to extract, aggregate, and analyze business data",
+        "Identifying trends, risks, and performance gaps through structured analysis",
+        "Building business-focused reports and dashboards to support decision-making",
+
       ],
       gradient: "from-primary to-primary/70",
     },
@@ -27,10 +28,10 @@ const Skills = () => {
       icon: TrendingUp,
       category: "Analytics Capabilities",
       skills: [
-        "Data cleaning and preparation",
-        "Exploratory Data Analysis (EDA)",
-        "KPI tracking and performance analysis",
-        "Customer and operational analytics",
+      "Data cleaning and preparation for accurate analysis",
+      "Exploratory Data Analysis (EDA) to uncover patterns and anomalies",
+      "KPI tracking and performance analysis for business monitoring",
+      "Customer and operational analytics to support optimization decisions",
       ],
       gradient: "from-primary/80 to-secondary/80",
     },
